@@ -7,9 +7,9 @@ function solution(common) {
 /** TIL
  * Array.prototype.slice(startIdx, endIdx)  => array
  * [1]+1 = '11'
- */
-
-/** EXAMPLE
+ *
+ *
+ ** EXAMPLE
  * const alphabet = ['a', 'b', 'c', 'd', 'e']
  *
  * slice 에서 -1 idx는 마지막 요소를 뜻함

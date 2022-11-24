@@ -22,9 +22,9 @@ function solution(babbling) {
  *
  * Contructor : RegExp(/ab+c/, 'i')  => object
  * RegExp.prototype.test(str)  => boolean
- */
-
-/** EXAMPLE
+ *
+ *
+ ** EXAMPLE
  * [1,2,3].map(el => el * 2)  => [2,4,6]
  * [1,2,3].filter(el => el === 2)  => [2]
  *
