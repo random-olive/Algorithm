@@ -5,7 +5,7 @@ function solution(common) {
 }
 
 /** TIL
- * Array.prototype.slice(startIdx, endIdx)  => array
+ * Array.prototype.slice((startIdx(, endIdx)))  => array
  * [1]+1 = '11'
  *
  *

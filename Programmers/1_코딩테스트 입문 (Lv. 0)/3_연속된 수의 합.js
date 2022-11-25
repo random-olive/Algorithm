@@ -17,9 +17,10 @@ function solution(num, total) {
   return Array(num).fill().map((_, i) => i + start);
 }
 
+
 /** TIL
  * Array(any type)  => array
- * Array.prototype.fill(value, (start, (end) )  => array
+ * Array.prototype.fill((value, (start, (end)) )  => array
  * Math.ceil(num)  => number
  * Math.floor(num)  => number
  *

@@ -14,11 +14,14 @@ function solution(A, B) {
 //Try Again !
 let solution = (a, b) => (b + b).indexOf(a);
 
+
 /** TIL
- * Array.prototype.concat(any value)  => array
- * Array.prototype.join((,)|separator)  => string
- * String.prototype.indexOf(searchValue[, fromIndex])  => first idx  ! fromIdex default: 0
- * String.prototype.lastIndexOf(searchValue[, fromIndex])  => last idx  ! fromIdx default: +Infinity, fromIdex<0 -> 0
+ * Array.prototype.concat((any value))  => array
+ * Array.prototype.join((separator))  => string  ! default separator: ,
+ * 
+ * String.prototype.split((seperator, (limit)))  => array(limit)  ! seperator can be regex or object  ! **KEEP : Symbol.split()**
+ * String.prototype.indexOf(searchValue(, fromIndex))  => first idx  ! fromIdex default: 0
+ * String.prototype.lastIndexOf(searchValue(, fromIndex))  => last idx  ! fromIdx default: +Infinity, fromIdex<0 -> 0
  * 반대로 + 포함 / 뒤부터 체크
  * 
  ** EXAMPLE
@@ -37,11 +40,11 @@ let solution = (a, b) => (b + b).indexOf(a);
  * 
  * let str = 'To be, or not to be, that is the qustion'
  * let count = 0;
- * let pos = str.indexOf('e')
+ * let idx = str.indexOf('e')
  * 
  * while (pos !== -1){
  * count++
- * pos = str.indexOf('e',pos+1)
+ * idx = str.indexOf('e',idx+1)
  * }
  *
  *🥲 반성 : 자유로운 사고..
