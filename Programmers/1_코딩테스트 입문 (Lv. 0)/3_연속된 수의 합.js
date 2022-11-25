@@ -14,9 +14,7 @@ function solution(num, total) {
 //Try Again !
 function solution(num, total) {
   let start = Math.ceil(total / num - Math.floor(num / 2));
-  return Array(num)
-    .fill()
-    .map((_, i) => i + start);
+  return Array(num).fill().map((_, i) => i + start);
 }
 
 /** TIL
