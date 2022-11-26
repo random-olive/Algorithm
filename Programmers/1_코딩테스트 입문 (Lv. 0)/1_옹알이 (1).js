@@ -1,6 +1,6 @@
 function solution(babbling) {
   let answer = 0;
-  let word = ["aya", "ye", "woo", "ma"];
+  let word = ['aya', 'ye', 'woo', 'ma'];
   let filtered = [];
 
   for (let i = 0; i < word.length; i++) {

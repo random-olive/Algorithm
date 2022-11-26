@@ -1,10 +1,10 @@
 function solution(A, B) {
-  let arr = A.split("");
+  let arr = A.split('');
 
   if (A === B) return 0;
 
   for (let i = 1; i <= A.length; i++) {
-    if ( B === arr.slice(-i).concat(arr.slice(0, arr.length - i)).join("")) return i; 
+    if ( B === arr.slice(-i).concat(arr.slice(0, arr.length - i)).join('')) return i; 
   }
 
   return -1;
@@ -26,9 +26,14 @@ let solution = (a, b) => (b + b).indexOf(a);
  * 
  ** EXAMPLE
  * ['a','b','c'].concat([1,[2,3]])  => ['a','b','c',1,2,3] !
+ * 
  * [1, undefined, 3].join()  => '1,,3'
+ * 
+ * '777777'.split('7')  => ['', '2', '3', '']
+ * 
  * 'Blue Whale'.indexOf('Whale', 5)  => 5
  * 'Blue Whale'.indexOf('', 7)  => 7
+ * 
  * 'canal'.lastIndexOf('a')  => 3
  * 'canal'.lastIndexOf('a', 0);  => -1
  * 'canal'.lastIndexOf('c', 0);  =>  0
