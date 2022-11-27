@@ -19,7 +19,7 @@ function solution(babbling) {
  * Array.prototype.length  => number
  * 
  * String.prototype.replace(regexp|substr, newSubstr|function)  => string   ! special replacement patterns
- * String.prototype.toUpperCase()  => string
+ * String.prototype.toUpperCase()  => string  ! shallow copy
  * String.length
  * 
  * Contructor : RegExp(/ab+c/, 'i')  => object
