@@ -18,7 +18,7 @@ function solution(babbling) {
  * Array.prototype.filter((el, idx, arr) => {}) => array
  * Array.prototype.length  => number
  * 
- * String.prototype.replace(regexp|substr, newSubstr|function)  => string   ! special replacement patterns
+ * String.prototype.replace(regexp|substr, newSubstr|function)  => string   ! replaces only one + special replacement patterns
  * String.prototype.toUpperCase()  => string  ! shallow copy
  * String.length
  * 
