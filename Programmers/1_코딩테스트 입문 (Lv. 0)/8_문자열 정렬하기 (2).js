@@ -17,7 +17,7 @@ function solution(my_string) {
  * shallow copy : [...arr].sort()
  * deep copy: arr.sort()
  * 
- * Spread syntax (...)
+ * Spread syntax : ...
  * let numbers = [1,2,3]  => [...numbers]  => [1,2,3]
  * 
  * 

@@ -4,7 +4,7 @@ function solution(n, t) {
 
 
 /** TIL
- * Exponentiation (**)  => 3 ** 4 = 3^4
+ * Exponentiation : **  => 3 ** 4 = 3^4
  * 
  * [ERROR] javascript Unexpected identifier  => 오탈자 체크
  * 
