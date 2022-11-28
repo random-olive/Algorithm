@@ -4,7 +4,7 @@ function solution(num, k) {
 }
 
 /** TIL
- * Template literals : `${}`
+ * Template literals : `${}`  => string
  * 
  *
  ** EXAMPLE
