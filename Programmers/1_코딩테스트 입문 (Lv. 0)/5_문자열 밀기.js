@@ -19,7 +19,7 @@ let solution = (a, b) => (b + b).indexOf(a);
  * Array.prototype.concat((any value))  => array
  * Array.prototype.join((separator))  => string  ! default separator: ,
  * 
- * String.prototype.split((seperator, (limit)))  => array(limit)  ! seperator can be regex or object  ! **KEEP : Symbol.split()**
+ * String.prototype.split((seperator, (limit)))  => array(limit)  ! seperator can be regex or object  ! **KEEP : Symbol.split()**  ! ...Spread
  * String.prototype.indexOf(searchValue(, fromIndex))  => first idx  ! fromIdex default: 0
  * String.prototype.lastIndexOf(searchValue(, fromIndex))  => last idx  ! fromIdx default: +Infinity, fromIdex<0 -> 0
  * 반대로 + 포함 / 뒤부터 체크
