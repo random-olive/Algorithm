@@ -32,7 +32,7 @@ function solution(numbers) {
   }
   return + numbers;
 }
-// numbers= 'sevenzerozerooneeighttwo'
+
 /** TIL
  * String.prototype.replaceAll(pattern, replacement)
  * 
@@ -53,7 +53,6 @@ function solution(numbers) {
  *  split, join
  * 
  *  me = me
- *    
  */
 
 
