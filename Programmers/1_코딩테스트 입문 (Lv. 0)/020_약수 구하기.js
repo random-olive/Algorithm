@@ -7,6 +7,7 @@ function solution(n) {
   return Array.from({ length: n }, (_, i) => i + 1).filter((el) => n % el === 0);
 }
 
+
 /** TIL
  * Array.from(arrayLike, (element(, index)))  => new shallow array
  * Array.from(arrayLike, mapFn(, thisArg))  => new shallow array + map

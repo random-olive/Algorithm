@@ -20,8 +20,7 @@ function solution(array, n) {
   return array.reduce((acc, cur) =>
     Math.abs(acc - n) < Math.abs(cur - n) ? acc : Math.abs(acc - n) === Math.abs(cur - n) ? Math.min(acc, cur) : cur)}
 
-
-
+    
 /** TIL
  *🥲 반성 : index값을 구하지 말고 []에 지정해서 편하게 꺼내 쓰기
            sort, reduce

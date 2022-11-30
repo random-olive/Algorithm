@@ -33,6 +33,7 @@ function solution(numbers) {
   return + numbers;
 }
 
+
 /** TIL
  * String.prototype.replaceAll(pattern, replacement)
  * 

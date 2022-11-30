@@ -8,6 +8,7 @@ function solution(order) {
   return ('' + order).split(/[369]/).length - 1;
 }
 
+
 /** TIL
  * 코딩 테스트 런타임 에러 발생 원인
  * 1. 배열에 할당된 크기를 넘어 접근
