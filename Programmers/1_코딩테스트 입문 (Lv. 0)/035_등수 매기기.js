@@ -22,6 +22,7 @@ function solution(score) {
   return answer.map((el) => el[0]);
 }
 
+
 //Try Again !
 function solution(score) {
   return score.map(([a, b]) => a + b).map((el, _, arr) => [...arr].sort((a, b) => b - a).indexOf(el) + 1);
