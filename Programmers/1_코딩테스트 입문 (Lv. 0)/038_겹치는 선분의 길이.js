@@ -45,6 +45,7 @@ function solution(lines) {
 /** TIL
  * Array.prototype.forEach(callback(currentvalue[, index[, array]])[, thisArg])  =>
  *
+ * 
  * EXAMPLE
  * const items = ['item1', 'item2', 'item3']; const copy = [];
  * 
@@ -54,6 +55,7 @@ function solution(lines) {
  * // 이후
  * items.forEach( function (item) {copy.push(item)} );
  *
+ * 
  * 🥲 반성
  * 로직이 이상하다고 생각되는 부분의 테스트 케이스 점검하기
  */
