@@ -8,7 +8,7 @@ function solution(my_string) {
 }
 
 /** TIL
- * Array.prototype.sort((compare function))  => sorted in 'str' order
+ * Array.prototype.sort((compare function))  => sorted in 'str' order  !! MUTABLE !!
  *
  * Spread syntax : ...
  *
