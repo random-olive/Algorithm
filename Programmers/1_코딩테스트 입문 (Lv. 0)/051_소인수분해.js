@@ -1,19 +1,58 @@
 function solution(n) {
+  let list = [];
   let answer = [];
-  let divisible = [];
+
   for (let i = 2; i <= n; i++) {
-    if (n % i === 0) divisible.push(i);
+    if (n % i === 0) list.push(i);
   }
-  let leng = divisible.length;
 
-  answer.push(divisible[0]);
+  answer[0] = list[0];
 
-  for (let i = 1; i < leng; i++) {
-    let chk = 0;
+  for (let i = 1; i < list.length; i++) {
+    let check = true;
     for (let j = 0; j < answer.length; j++) {
-      if (divisible[i] % answer[j] === 0) chk = 1;
+      if (list[i] % answer[j] === 0) check = false;
     }
-    if (chk === 0) answer.push(divisible[i]);
+    if (check) answer.push(list[i]);
   }
   return answer;
 }
+
+//Try Again !
+function solution(n) {
+  let answer = [];
+  let i = 2;
+
+  while (i <= n) {
+    if (n % i === 0) { answer.push(i);  n = n / i } 
+    else { i++ }
+  }
+
+  return [...new Set(answer)];
+}
+
+function solution(n) {
+  var answer = [];
+
+  for (let i = 2; i <= n; i++) {
+    while (n % i === 0) { answer.push(i);  n = n / i } 
+  }
+
+  return [...new Set(answer)];
+}
+
+function solution(n) {
+  return Array.from(
+    new Set([...Array(n + 1).keys()].filter((v) => n % v === 0).filter((v) => {
+      for (let i = 2; i < v; i++) { if (v % i === 0) return false }
+      return true;
+    })
+    )).splice(1);
+}
+
+
+/** TIL
+ * 🥲 반성
+ * 얽매이지 말기
+ */
+
