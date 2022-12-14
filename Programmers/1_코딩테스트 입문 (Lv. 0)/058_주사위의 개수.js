@@ -11,3 +11,7 @@ function solution(box, n) {
   return box.map((el) => ~~(el / n)).reduce((a, c) => a * c, 1);
 }
 
+/** TIL
+ * 🥲 반성
+ * 최대한 줄여보기
+ */
