@@ -42,8 +42,9 @@ function solution(chicken) {
  * ~  : NOT
  * ~~ : NOT+NOT 하거나 Math.floor()처럼 쓰거나 undefined/null을 0으로 변환할 때
  * 
- * >> :  bitshift, (2진수 경우) 1로 채우면서 push  // returns decimal
- * >>> : bitshift, (2진수 경우) 0으로 채우면서 push  // returns decimal
+ * [아래 내용 확인 전까지 폐기]
+ * >> :  bitshift, (2진수 경우) 1로 채우면서 push  // returns decimal ?? 
+ * >>> : bitshift, (2진수 경우) 0으로 채우면서 push  // returns decimal ?? 
  * 
  ** EXAMPLE
  * ~ 0000000000000101 (5 in decimal) = 1111111111111010 (-6 in decimal)
@@ -54,4 +55,5 @@ function solution(chicken) {
  * -9       (10진수): 11111111111111111111111111110111 (2진수)
  * -9 >>  2 (10진수): 11111111111111111111111111111101 (2진수) = -3 (10진수)
  * -9 >>> 2 (10진수): 00111111111111111111111111111101 (2진수) = 1073741821 (10진수)
+ * [아래 내용 확인 전까지 폐기]
  */
