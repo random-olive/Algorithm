@@ -38,7 +38,7 @@ function solution(chicken) {
 
 
 /** TIL
- * Operators :  
+ * Operators : tilde, shift operator
  * ~  : NOT
  * ~~ : NOT+NOT 하거나 Math.floor()처럼 쓰거나 undefined/null을 0으로 변환할 때
  * 
