@@ -33,5 +33,3 @@ function solution(n) {
  *
  *😄 적응 : split -> spread... / Number() -> +
  */
-
- 
