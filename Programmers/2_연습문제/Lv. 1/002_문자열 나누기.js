@@ -1,69 +1,77 @@
 function solution(s) {
   let count = [0, 0];
-
-  //저 첫 글자를 읽습니다. 이 글자를 x라고 합시다.
-  //이제 이 문자열을 왼쪽에서 오른쪽으로 읽어나가면서, x와 x가 아닌 다른 글자들이 나온 횟수를 각각 셉니다.
-  //처음으로 두 횟수가 같아지는 순간 멈추고, 지금까지 읽은 문자열을 분리합니다.
-  //"abracadabra" -> ab - ra - ca - da - br - a
-
-  //'ba'
+  let arr = [...s];
 
   for (let i = 0; i < s.length; i++) {
     for (let j = 0; j < s.length; j++) {
-      if (s[i] === s[j]) {
-        count[0]++;
-      }
-      if (s[i] !== s[j]) {
-        count[1]++;
-      }
+      s[i] === s[j] ? count[0]++ : count[1]++;
       if (count[0] === count[1]) {
-        s += ',';
+        i = j + 1;
+        arr[j] += ' ';
       }
     }
   }
-  return s;
+  //   return  arr.join('').split(' ').filter((el) => el).length;
+  return count[0] + count[1] !== s.length ? 1 : arr.join('').split(' ').filter((el) => el).length
 }
 
+////////
+//test
 function solution(s) {
   let count = [0, 0];
-  let set = [...new Set([...s])];
+  let arr = [...s];
+  let answer = 0;
 
-  //저 첫 글자를 읽습니다. 이 글자를 x라고 합시다.
-  //이제 이 문자열을 왼쪽에서 오른쪽으로 읽어나가면서, x와 x가 아닌 다른 글자들이 나온 횟수를 각각 셉니다.
-  //처음으로 두 횟수가 같아지는 순간 멈추고, 지금까지 읽은 문자열을 분리합니다.
-  //"abracadabra" -> ab - ra - ca - da - br - a
-
-  //'ba'
   for (let i = 0; i < s.length; i++) {
     for (let j = 0; j < s.length; j++) {
-      if (s[i] === j[i]) { count[0]++;}
-      if (s[i] !== j[i]) { count[1]++;
-          if (count[0] === count[1]) {  s += ',';   count=[0,0]  }
+      s[i] === s[j] ? count[0]++ : count[1]++;
+      if (count[0] === count[1]) {
+        i = j + 1;
+        //   arr[j] += ' ';
+        answer++;
+        //   count=[0,0]
       }
     }
   }
-  return [count, s];
+  return count[0] !== count[1] ? ++answer : answer;
 }
 
-//
+//answer2
 function solution(s) {
   let count = [0, 0];
-  let set = [...new Set([...s])];
+  let answer = 0;
 
-  //저 첫 글자를 읽습니다. 이 글자를 x라고 합시다.
-  //이제 이 문자열을 왼쪽에서 오른쪽으로 읽어나가면서, x와 x가 아닌 다른 글자들이 나온 횟수를 각각 셉니다.
-  //처음으로 두 횟수가 같아지는 순간 멈추고, 지금까지 읽은 문자열을 분리합니다.
-  //"abracadabra" -> ab - ra - ca - da - br - a
-
-  //'ba'
   for (let i = 0; i < s.length; i++) {
     for (let j = 0; j < s.length; j++) {
-      if (s[i] === s[j]) { count[0]++;}
-      if (s[i] !== s[j]) { count[1]++;
-          if (count[0] === count[1]) {  s += ',';   count=[0,0]  }
+      s[i] === s[j] ? count[0]++ : count[1]++;
+      if (count[0] === count[1]) {
+        i = j + 1;
+        answer++;
+      }
+      if (count[0] !== count[1] && j === s.length - 1) {
+        return 1;
       }
     }
   }
-  return [count, s];
+  return count[0] !== count[1] ? ++answer : answer;
 }
 
+
+//answer
+function solution(s) {
+    let count = [0, 0];
+    let answer = 0;
+  
+    for (let i = 0; i < s.length; i++) {
+      for (let j = 0; j < s.length; j++) {
+        s[i] === s[j] ? count[0]++ : count[1]++;
+        if (count[0] === count[1]) {
+          i = j + 1;
+          answer++
+        }
+      }
+    }
+
+    // return count[0] + count[1] !== s.length && count[0]>count[1] ? 1 : count[0] !== count[1] ? ++answer : answer;
+    return count
+}
