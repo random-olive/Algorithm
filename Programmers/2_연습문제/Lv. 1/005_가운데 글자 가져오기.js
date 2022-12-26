@@ -10,4 +10,5 @@ function solution(s) {
 
 /** TIL
  * String.prototype.substr()  => Deprecated : str.substr(startIdx, length)
+ * String.prototype.substring(startIdx[, endIdx]) == slice
  */
