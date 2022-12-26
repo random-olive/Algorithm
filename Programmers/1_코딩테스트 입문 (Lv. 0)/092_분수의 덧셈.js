@@ -22,6 +22,8 @@ function solution(denum1, num1, denum2, num2) {
 
 /** TIL
  * 🥲 반성
+ * function gcd(a,b){ //10 % 2처럼 앞이 큰 것이 중요함
+ * return a%b? gcd(b,a%b):b}
  * a % b === true (값이 있음) ?
  * gcd * lcm = a * b
  */
