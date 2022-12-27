@@ -12,6 +12,6 @@ function solution(n) {
 }
 
 /** TIL
- * 🥲 반성 : #43
+ * 🥲 반성 : #43 (Lv.0)
  * 복습 : Operator : !!  => 확실한 논리결과를 가지기 위함 : 정의되지 않은 undefined 등의 값에도 확실한 true / false 값을 줌 + NOT
  */

@@ -19,6 +19,6 @@ function solution(n) {
 }
 
 /** TIL
- * 🥲 반성 : #43
+ * 🥲 반성 : #43 (Lv.0)
  * Array : length로 만들기
  */
