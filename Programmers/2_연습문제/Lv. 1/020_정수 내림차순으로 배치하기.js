@@ -7,6 +7,7 @@ function solution(n) {
   return +(n + '').split('').sort().reverse().join('');
 }
 
+//
 function solution(n) {
   let nums = [];
 
