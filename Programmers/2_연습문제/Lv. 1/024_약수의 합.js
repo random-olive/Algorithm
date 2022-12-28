@@ -16,6 +16,7 @@ function solution(n) {
   var answer = 0;
   let i;
   for (i = 1; i <= Math.sqrt(n); i++) {
+    
     if (!(n % i)) answer += i + n / i;
   }
   i--;
@@ -24,18 +25,19 @@ function solution(n) {
 
 //
 function solution(n, a = 0, b = 0) {
-  return n <= a / 2 ? b : solution(n, a + 1, (b += n % a ? 0 : a));
+  return a === n + 1 ? b : solution(n, a + 1, (b += n % a ? 0 : a));
+  //return a === n ? b + n : solution(n, a + 1, (b += n % a ? 0 : a));
 }
 
 //
-let solution = (num) => {
+let solution = (n) => {
   let answer = 0,
     i = 1,
-    j = num % 2 == 0 ? 1 : 2;
+    j = n % 2 == 0 ? 1 : 2;
 
-  for (i; i < num; i = i + j) if (num % i == 0) answer += i;
+  for (i; i < n; i = i + j) if (n % i == 0) answer += i;
 
-  return answer + num;
+  return answer + n;
 };
 
 
@@ -44,5 +46,6 @@ let solution = (num) => {
  * 
  * 🥲 반성
  * for 루프의 변수를 밖에 정의 후 활용
- * i, n/i, n%i 활용, 짝, 개수
+ * i, n/i, n%i 활용, 짝, 개수, i--
+ * 5%0 = NaN -> false
  */
