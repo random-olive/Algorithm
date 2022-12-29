@@ -13,9 +13,9 @@ function solution(n) {
 
 //Try Again !
 function solution(n) {
-  let prime = Array.from(Array(n), (_, i) => i + 1);
-  for (let i = 2; i <= parseInt(Math.sqrt(n)); i++) {
-    prime = prime.filter((el) => el % i != 0 || el <= i);
+  let prime = Array.from(Array(n), (_, i) => i + 1); //i 활용하려면 1씩 mark
+  for (let i = 2; i <= parseInt(Math.sqrt(n)); i++) { //제곱근이 나오는 순간 소수에서 벗어남 : sqrt까지 mark
+    prime = prime.filter((el) => el % i != 0 || el <= i); //arr.method: iterable -> for loop처럼 생각하기
   }
   return n - prime.length;
 }
