@@ -40,3 +40,8 @@ function solution(s) {
 
   return result;
 }
+
+/** TIL
+ * 🥲 반성
+ * 정규식 test 체크
+ */
