@@ -16,7 +16,6 @@ function solution(n) {
   var answer = 0;
   let i;
   for (i = 1; i <= Math.sqrt(n); i++) {
-    
     if (!(n % i)) answer += i + n / i;
   }
   i--;
@@ -47,5 +46,6 @@ let solution = (n) => {
  * 🥲 반성
  * for 루프의 변수를 밖에 정의 후 활용
  * i, n/i, n%i 활용, 짝, 개수, i--
+ * i-- : 감소하는 logic도 같이 들어가 있음
  * 5%0 = NaN -> false
  */
