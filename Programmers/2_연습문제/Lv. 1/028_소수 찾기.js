@@ -1,9 +1,9 @@
-function solution(n) { //시간초과
-  let prime = Array.from({ length: n }, (_, i) => i + 1);
+function solution(n) {
+  let prime = Array.from({ length: (n + 1) / 2 }, (_, i) => 2 * i + 1);
 
-  for (let i = 2; i <= ~~Math.sqrt(n); i++) {
+  for (let i = 3; i <= ~~Math.sqrt(n); i += 2) {
     prime = prime.filter((el) => el % i || el <= i);
   }
 
-  return prime.length - 1;
+  return prime.length;
 }
