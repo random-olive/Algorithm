@@ -1,4 +1,11 @@
 function solution(d, budget) {
+  let result = 0;
+  
   d = d.sort((a, b) => a - b);
-  return d.reduce((a,c,i)=>{if (a>=budget){a+c} return i},0)
+
+  for (let i = 0; i < d.length; i++) {
+    result += d[i];
+    if (result > budget) return i;
+    else if (result === budget) return i + 1;
+  }
 }
