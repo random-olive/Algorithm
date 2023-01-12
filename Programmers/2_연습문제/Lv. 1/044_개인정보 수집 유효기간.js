@@ -93,7 +93,7 @@ function solution(today, terms, privacies) {
 //
 function solution(today, terms, privacies) {
     let [dY, dM, dD] = today.split('.');
-    const currentDays = +dY * 12 + +dM - 1; //?
+    const currentDays = +dY * 12 + +dM - 1;
     let extra = {};
 
     for (let i = 0; i < terms.length; i++) {
