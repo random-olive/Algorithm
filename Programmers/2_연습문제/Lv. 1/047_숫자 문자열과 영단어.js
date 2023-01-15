@@ -33,7 +33,7 @@ function solution(s) {
     s = s.replace(new RegExp(key, 'g'), value);
   }
 
-  //better & return Number(s) **
+  //Better & return Number(s) **
   for (const key of Object.keys(hash)) {//객체를 활용한 일대일 대응 : key를 만들었으면, 
     s = s.replace(new RegExp(key, 'gi'), hash[key]); //for loop 사용해서 key가 배정되어야 사용 가능
   }
@@ -43,6 +43,25 @@ function solution(s) {
   let answer = s.replace(pattern, (v) => obj[v]); //replace에서 객체꼴 사용시 element를 부여해야
 }
 
+//manually
+function solution(s) {
+  let hash = {zero: '0', one: '1', two: '2', three: '3', four: '4', five: '5', six: '6', seven: '7', eight: '8', nine: '9'};
+  let result = '';
+  let current = '';
+  for (let i = 0; i < s.length; i++) {
+    if (!isNaN(s[i])) { //숫자
+      result += s[i];
+      continue; //!
+    } else { //문자
+      current += s[i];
+      if (hash[current]) {
+        result += hash[current];
+        current = '';
+      }
+    }
+  }
+  return Number(result);
+}
 
 /** TIL
  * 🥲 반성
@@ -51,4 +70,5 @@ function solution(s) {
  * 반복 -> reduce
  * 교체에 split, join을 이용할 수도 있구나 ~
  * parseInt보다는 Number가 빠르다
+ * 객체 key는 '' 안넣어도 됨!!
  */
